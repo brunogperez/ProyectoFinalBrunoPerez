@@ -196,12 +196,29 @@ grid-area: foto5;
         "foto3 foto4"
         "foto5 foto5";
     }
+    .botonera ul li a{
+        font-size: 0.75em;
+    }
 }
 @media (max-width:576px) {
     .galeria-empresa{
         display: none;
     }
-
+    .botonera ul li a{
+        font-size: 0.75em;
+    }
+    h1{
+        font-size: 7vw;
+    }
+        
+    p{
+        font-size: 4vw;
+        margin: 5px;
+    }
+    .tabla-empresa div{
+        font-size: 4vw;
+        margin: 5px;
+    }
 }
 @media (min-width:992px){
     .carousel-empresa{
