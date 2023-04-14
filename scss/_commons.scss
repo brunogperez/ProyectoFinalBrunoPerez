@@ -1,0 +1,59 @@
+h1{
+    color: $mainColor;
+    font-family: $mainFont;
+    font-size: $textLg;
+}
+h2{
+    color: $mainColor;
+    text-decoration: underline;
+}
+
+p{
+    color:$secondaryColor;
+    font-family: $mainFont;
+    font-size: $textMd;
+}
+
+a{
+    color: blue;
+    font-family: 'Electrolize', sans-serif;
+    text-decoration: none;
+}
+
+hr{
+    color: $mainColor;
+}
+
+header img{
+    width: 100%;
+}
+
+img.pequena{
+    width: 75px;
+}
+img.mediana{
+    width: 150px;
+}
+
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.bg-home{
+    background-image: url(../backgrounds/background-home.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.w-90{
+    width: 90%;
+}
