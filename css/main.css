@@ -90,52 +90,6 @@ img.mediana {
   text-transform: uppercase;
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
-  .carousel-empresa {
-    display: none;
-  }
-  .error404mobile {
-    display: none;
-  }
-  .galeria-empresa {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 33vh 33vh 33vh;
-    grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto5";
-  }
-  .botonera ul li a {
-    font-size: 0.75em;
-  }
-}
-@media (max-width: 576px) {
-  .galeria-empresa {
-    display: none;
-  }
-  .error404 {
-    display: none;
-  }
-  .botonera ul li a {
-    font-size: 0.75em;
-  }
-  h1 {
-    font-size: 7vw;
-  }
-  p {
-    font-size: 4vw;
-    margin: 5px;
-  }
-  .tabla-empresa div {
-    font-size: 4vw;
-    margin: 5px;
-  }
-}
-@media (min-width: 992px) {
-  .carousel-empresa {
-    display: none;
-  }
-  .error404mobile {
-    display: none;
-  }
-}
 .tabla-empresa div {
   align-items: center;
   justify-content: center;
@@ -208,6 +162,71 @@ img.mediana {
 
 .error404mobile {
   width: 100%;
+}
+
+.iconFooter:hover {
+  animation: shake 0.75s;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .carousel-empresa {
+    display: none;
+  }
+  .error404mobile {
+    display: none;
+  }
+  .galeria-empresa {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 33vh 33vh 33vh;
+    grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto5";
+  }
+  .botonera ul li a {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 576px) {
+  .galeria-empresa {
+    display: none;
+  }
+  .error404 {
+    display: none;
+  }
+  .botonera ul li a {
+    font-size: 3vw;
+  }
+  h1 {
+    font-size: 7vw;
+  }
+  p {
+    font-size: 3vw;
+    margin: 5px;
+  }
+  .tabla-empresa div {
+    font-size: 3vw;
+    margin: 5px;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-empresa {
+    display: none;
+  }
+  .error404mobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

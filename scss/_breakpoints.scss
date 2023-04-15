@@ -1,4 +1,5 @@
 @media (min-width:576px) and (max-width:992px) {
+    
     .carousel-empresa {
         display: none;
     }
@@ -16,8 +17,14 @@
             "foto5 foto5";
     }
 
-    .botonera ul li a {
-        font-size: 0.75em;
+    .botonera {
+        ul {
+            li {
+                a {
+                    font-size: $textNavMobile;
+                }
+            }
+        }
     }
 }
 
@@ -34,7 +41,7 @@
         ul {
             li {
                 a {
-                    font-size: 0.75em;
+                    font-size: $textNavMobile;
                 }
             }
         }
@@ -46,12 +53,12 @@
     }
 
     p {
-        font-size: 4vw;
+        font-size: $textMobileSm;
         margin: 5px;
     }
 
     .tabla-empresa div {
-        font-size: 4vw;
+        font-size: $textMobileSm;
         margin: 5px;
     }
 }
