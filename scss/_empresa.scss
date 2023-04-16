@@ -4,6 +4,11 @@
     @include boxtext (1.5vw,$secondaryColor)
 }
 
+.carousel-empresa{
+    width: 90%;
+    margin: auto;  
+}
+
 .galeria-empresa{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -23,30 +28,10 @@
     object-fit:cover;
     border-radius: 30px;
 }
+
+@for $i from 1 through 5{
+    .foto#{$i}{
+        grid-area: foto#{$i};
+    }
+}
     
-.foto1{
-grid-area: foto1;
-
-}
-.foto2{
-grid-area: foto2;
-
-}
-.foto3{
-grid-area: foto3;
-
-}
-.foto4{
-grid-area: foto4;
-
-}
-.foto5{
-grid-area: foto5;
-
-}
-
-.carousel-empresa{
-    width: 90%;
-    margin: auto;  
-}
-

@@ -5,12 +5,11 @@ h1{
 }
 h2{
     color: $secondaryColor;
-    text-decoration: underline;
+    font-family: $mainFont;
 }
 
 p{
-    color:$secondaryColor;
-    font-family: $mainFont;
+    @extend h2 ;
     font-size: $textMd;
 }
 
@@ -34,14 +33,13 @@ img.mediana{
     width: 150px;
 }
 
-
+.w-90{
+    width: 90%;
+}
 
 .bg-home{
     background-image: url(../backgrounds/background-home.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-.w-90{
-    width: 90%;
 }

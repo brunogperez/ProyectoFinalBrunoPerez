@@ -22,7 +22,7 @@
             a {
                 color: $mainColor;
                 text-decoration: none;
-                font-size: 1em;
+                font-size: $textNav;
                  &:hover{
                     color: $keyColor;
                     transform: scale(1.2);

@@ -1,9 +1,28 @@
 // variables globales
 
+
+//paleta de colores
+$paletagris:(
+    'uno':#dcdcdc,
+    'dos':#d3d3d3,
+    'tres':#c9c9c9,
+    'cuatro':#bdbdbd,
+    'cinco':#a7a7a7,
+);
+
+$paletaazulado:(
+    'uno':#666f88,
+    'dos':#788199,
+    'tres':#8990a2,
+    'cuatro':#a3a8b7,
+    'cinco':#b5bac9,
+    'seis': lightblue,
+);
+
 //colores
-$mainColor: white;
-$secondaryColor: lightgrey;
-$keyColor: lightblue;
+$mainColor: map-get($map: $paletagris , $key: uno );
+$secondaryColor: map-get($map: $paletaazulado , $key: tres );;
+$keyColor: map-get($map: $paletaazulado , $key: seis );;
 
 //fonts
 $mainFont: 'Oswald', sans-serif;
@@ -12,5 +31,7 @@ $textSm: 1vw;
 $textMd: 2vw;
 $textLg: 4vw;
 
+$textNav:1.8vw;
 $textNavMobile: 3vw;
 $textMobileSm: 3vw;
+

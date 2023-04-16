@@ -1,19 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300;400;500&family=Oswald:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
 h1 {
-  color: white;
+  color: #dcdcdc;
   font-family: "Oswald", sans-serif;
   font-size: 4vw;
 }
 
-h2 {
-  color: lightgrey;
-  text-decoration: underline;
+h2, p {
+  color: #8990a2;
+  font-family: "Oswald", sans-serif;
 }
 
 p {
-  color: lightgrey;
-  font-family: "Oswald", sans-serif;
   font-size: 2vw;
 }
 
@@ -23,7 +21,7 @@ a {
 }
 
 hr {
-  color: white;
+  color: #dcdcdc;
 }
 
 header img {
@@ -38,15 +36,15 @@ img.mediana {
   width: 150px;
 }
 
+.w-90 {
+  width: 90%;
+}
+
 .bg-home {
   background-image: url(../backgrounds/background-home.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-
-.w-90 {
-  width: 90%;
 }
 
 .botonera ul {
@@ -61,16 +59,16 @@ img.mediana {
   justify-content: space-between;
 }
 .botonera ul li {
-  color: white;
+  color: #dcdcdc;
   text-decoration: none;
   font-size: 1.5em;
   display: flex;
   margin-left: 1em;
 }
 .botonera ul li a {
-  color: white;
+  color: #dcdcdc;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.8vw;
 }
 .botonera ul li a:hover {
   color: lightblue;
@@ -78,12 +76,36 @@ img.mediana {
   transition: 0.3s;
 }
 
+.iconFooter:hover {
+  transform: scale(1.2);
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
 .tabla-empresa div {
   align-items: center;
   justify-content: center;
   font-family: "Oswald", sans-serif;
   font-size: 1.5vw;
-  color: lightgrey;
+  color: #8990a2;
+}
+
+.carousel-empresa {
+  width: 90%;
+  margin: auto;
 }
 
 .galeria-empresa {
@@ -123,11 +145,6 @@ img.mediana {
   grid-area: foto5;
 }
 
-.carousel-empresa {
-  width: 90%;
-  margin: auto;
-}
-
 .img-carousel {
   display: block;
   width: 90%;
@@ -156,27 +173,47 @@ img.mediana {
 
 form div label {
   font-family: "Oswald", sans-serif;
-  font-size: 3vw;
+  font-size: 1.5vw;
   color: white;
 }
 
-.iconFooter:hover {
-  transform: scale(1.2);
-  animation: shake 1s;
-}
-
-@keyframes shake {
-  10% {
-    transform: rotate(15deg);
+@media (max-width: 576px) {
+  .galeria-empresa {
+    display: none;
   }
-  20% {
-    transform: rotate(-15deg);
+  .error404 {
+    display: none;
   }
-  30% {
-    transform: rotate(15deg);
+  .botonera ul div {
+    display: block;
+    margin: auto;
   }
-  40% {
-    transform: rotate(-15deg);
+  .botonera ul li a {
+    font-size: 3vw;
+  }
+  h1 {
+    text-align: center;
+    font-size: 7vw;
+  }
+  h2, p {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    font-size: 3vw;
+    margin: 5px;
+  }
+  .tabla-empresa div {
+    font-size: 3vw;
+    margin: 5px;
+  }
+  form div label {
+    font-family: "Oswald", sans-serif;
+    font-size: 3vw;
+    color: white;
+  }
+  .mapa {
+    filter: grayscale(0);
   }
 }
 @media (min-width: 576px) and (max-width: 992px) {
@@ -198,36 +235,13 @@ form div label {
   .botonera ul li a {
     font-size: 3vw;
   }
-}
-@media (max-width: 576px) {
-  .galeria-empresa {
-    display: none;
+  .mapa {
+    filter: grayscale(0);
   }
-  .error404 {
-    display: none;
-  }
-  .botonera ul div {
-    display: block;
-    margin: auto;
-  }
-  .botonera ul li a {
-    font-size: 3vw;
-  }
-  h1 {
-    text-align: center;
-    font-size: 7vw;
-  }
-  h2 {
-    text-align: center;
-  }
-  p {
-    text-align: center;
-    font-size: 3vw;
-    margin: 5px;
-  }
-  .tabla-empresa div {
-    font-size: 3vw;
-    margin: 5px;
+  form div label {
+    font-family: "Oswald", sans-serif;
+    font-size: 2vw;
+    color: white;
   }
 }
 @media (min-width: 992px) {
