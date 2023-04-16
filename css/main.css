@@ -7,18 +7,17 @@ h1 {
 }
 
 h2 {
-  color: white;
+  color: lightgrey;
   text-decoration: underline;
 }
 
 p {
-  color: grey;
+  color: lightgrey;
   font-family: "Oswald", sans-serif;
   font-size: 2vw;
 }
 
 a {
-  color: blue;
   font-family: "Electrolize", sans-serif;
   text-decoration: none;
 }
@@ -37,18 +36,6 @@ img.pequena {
 
 img.mediana {
   width: 150px;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .bg-home {
@@ -87,13 +74,16 @@ img.mediana {
 }
 .botonera ul li a:hover {
   color: lightblue;
-  text-transform: uppercase;
+  transform: scale(1.2);
+  transition: 0.3s;
 }
 
 .tabla-empresa div {
   align-items: center;
   justify-content: center;
+  font-family: "Oswald", sans-serif;
   font-size: 1.5vw;
+  color: lightgrey;
 }
 
 .galeria-empresa {
@@ -146,14 +136,14 @@ img.mediana {
   border-radius: 15px;
 }
 
-.text_form {
-  color: white;
-  font-family: "Oswald", sans-serif;
-}
-
 .mapa {
   width: 100%;
   height: 450px;
+  filter: grayscale(1);
+}
+.mapa:hover {
+  filter: grayscale(0);
+  transition: 0.75s;
 }
 
 .error404 {
@@ -164,8 +154,15 @@ img.mediana {
   width: 100%;
 }
 
+form div label {
+  font-family: "Oswald", sans-serif;
+  font-size: 3vw;
+  color: white;
+}
+
 .iconFooter:hover {
-  animation: shake 0.75s;
+  transform: scale(1.2);
+  animation: shake 1s;
 }
 
 @keyframes shake {
@@ -194,6 +191,10 @@ img.mediana {
     grid-template-rows: 33vh 33vh 33vh;
     grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto5";
   }
+  .botonera ul div {
+    display: block;
+    margin: auto;
+  }
   .botonera ul li a {
     font-size: 3vw;
   }
@@ -205,13 +206,22 @@ img.mediana {
   .error404 {
     display: none;
   }
+  .botonera ul div {
+    display: block;
+    margin: auto;
+  }
   .botonera ul li a {
     font-size: 3vw;
   }
   h1 {
+    text-align: center;
     font-size: 7vw;
   }
+  h2 {
+    text-align: center;
+  }
   p {
+    text-align: center;
     font-size: 3vw;
     margin: 5px;
   }

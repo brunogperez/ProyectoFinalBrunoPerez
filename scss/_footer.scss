@@ -1,6 +1,7 @@
 .iconFooter {
     &:hover{
-        animation: shake 0.75s;
+		transform: scale(1.2);
+        animation: shake 1s;
         
     }
 }

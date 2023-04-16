@@ -1,11 +1,13 @@
-.text_form{
-    color: $mainColor;
-    font-family: $mainFont;
-}
 
 .mapa{
     width: 100%;
     height: 450px;
+    filter: grayscale(1);
+    &:hover{
+        filter: grayscale(0);
+        transition: 0.75s;
+    }
+
 }
 
 .error404{
@@ -13,4 +15,8 @@
 }
 .error404mobile{
     width: 100%;
+}
+
+form div label {
+    @include boxtext(3vw,white)
 }

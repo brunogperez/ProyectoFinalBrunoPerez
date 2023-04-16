@@ -4,7 +4,7 @@ h1{
     font-size: $textLg;
 }
 h2{
-    color: $mainColor;
+    color: $secondaryColor;
     text-decoration: underline;
 }
 
@@ -15,8 +15,7 @@ p{
 }
 
 a{
-    color: blue;
-    font-family: 'Electrolize', sans-serif;
+    font-family: $secondaryFont;
     text-decoration: none;
 }
 
@@ -36,17 +35,6 @@ img.mediana{
 }
 
 
-.text-left{
-    text-align: left;
-}
-
-.text-center{
-    text-align: center;
-}
-
-.text-right{
-    text-align: right;
-}
 
 .bg-home{
     background-image: url(../backgrounds/background-home.jpg);

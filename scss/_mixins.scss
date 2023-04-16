@@ -1,0 +1,11 @@
+@mixin boxtext  ($size,$color){
+    font-family: $mainFont;
+    font-size: $size;
+    color: $color;
+}
+
+
+//p{
+//  @include boxtext(1em, blue)
+// }
+
