@@ -1,22 +1,42 @@
-
-.mapa{
+.mapa {
     width: 100%;
     height: 450px;
     filter: grayscale(1);
-    &:hover{
+
+    &:hover {
         filter: grayscale(0);
         transition: 0.75s;
     }
 
 }
 
-.error404{
-    width: 100%;   
+.error404 {
+    width: 100%;
 }
-.error404mobile{
+
+.error404mobile {
     width: 100%;
 }
 
 form div label {
-    @include boxtext(1.5vw,white)
+    @include boxtext(1.5vw, white)
+}
+
+
+.neon-button {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px blue, 0 0 35px blue, 0 0 40px blue, 0 0 50px blue;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: 0.3s;
+    }
 }
