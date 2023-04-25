@@ -7,14 +7,29 @@
         display: none;
     }
 
+    .logodesktop {
+        display: none;
+    }
+
+
+
     .botonera {
+        div {
+            a{
+                margin-left: 40%;
+            }
+        }
+
+
         ul {
-            div{
+            div {
                 display: block;
                 margin: auto;
             }
+
             li {
                 a {
+                    margin: auto;
                     font-size: $textNavMobile;
                 }
             }
@@ -24,11 +39,12 @@
 
     h1 {
         text-align: center;
-        font-size: 7vw;
+        font-size: $textMobileLg;
     }
 
-    h2{
+    h2 {
         text-align: center;
+        font-size: $textMobileSm;
     }
 
     p {
@@ -43,23 +59,27 @@
     }
 
     form div label {
-        @include boxtext(3vw,white)
+        @include boxtext(3vw, white)
     }
-    
-    .mapa{
+
+    .mapa {
         filter: grayscale(0);
     }
-    
+
 }
 
 
 @media (min-width:576px) and (max-width:992px) {
-    
+
     .carousel-empresa {
         display: none;
     }
 
     .error404mobile {
+        display: none;
+    }
+
+    .logodesktop {
         display: none;
     }
 
@@ -74,10 +94,11 @@
 
     .botonera {
         ul {
-            div{
+            div {
                 display: block;
                 margin: auto;
             }
+
             li {
                 a {
                     font-size: $textNavMobile;
@@ -86,12 +107,12 @@
         }
     }
 
-    .mapa{
+    .mapa {
         filter: grayscale(0);
     }
 
     form div label {
-        @include boxtext(2vw,white)
+        @include boxtext(2vw, white)
     }
 }
 
@@ -102,6 +123,10 @@
     }
 
     .error404mobile {
+        display: none;
+    }
+
+    .logomobile {
         display: none;
     }
 }

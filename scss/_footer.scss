@@ -1,23 +1,25 @@
 .iconFooter {
-    &:hover{
+	&:hover {
 		transform: scale(1.2);
-        animation: shake 1s;
-        
-    }
+		animation: shake 1s;
+
+	}
 }
 
 @keyframes shake {
 	10% {
 		transform: rotate(15deg);
 	}
+
 	20% {
 		transform: rotate(-15deg);
 	}
+
 	30% {
 		transform: rotate(15deg);
 	}
+
 	40% {
 		transform: rotate(-15deg);
 	}
 }
-

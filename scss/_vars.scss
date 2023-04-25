@@ -2,7 +2,7 @@
 
 
 //paleta de colores
-$paletagris:(
+$paletagris: (
     'uno':#dcdcdc,
     'dos':#d3d3d3,
     'tres':#c9c9c9,
@@ -10,7 +10,7 @@ $paletagris:(
     'cinco':#a7a7a7,
 );
 
-$paletaazulado:(
+$paletaazulado: (
     'uno':#666f88,
     'dos':#788199,
     'tres':#8990a2,
@@ -20,9 +20,11 @@ $paletaazulado:(
 );
 
 //colores
-$mainColor: map-get($map: $paletagris , $key: uno );
-$secondaryColor: map-get($map: $paletaazulado , $key: tres );;
-$keyColor: map-get($map: $paletaazulado , $key: seis );;
+$mainColor: map-get($map: $paletagris , $key: uno);
+$secondaryColor: map-get($map: $paletaazulado , $key: tres);
+;
+$keyColor: map-get($map: $paletaazulado , $key: seis);
+;
 
 //fonts
 $mainFont: 'Oswald', sans-serif;
@@ -31,7 +33,7 @@ $textSm: 1vw;
 $textMd: 2vw;
 $textLg: 4vw;
 
-$textNav:1.8vw;
+$textNav: 1.8vw;
 $textNavMobile: 3vw;
 $textMobileSm: 3vw;
-
+$textMobileLg: 7vw

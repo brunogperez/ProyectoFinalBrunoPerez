@@ -1,43 +1,42 @@
-h1{
+h1 {
     color: $mainColor;
     font-family: $mainFont;
     font-size: $textLg;
 }
-h2{
+
+h2 {
     color: $secondaryColor;
     font-family: $mainFont;
 }
 
-p{
-    @extend h2 ;
+p {
+    @extend h2;
     font-size: $textMd;
 }
 
-a{
+a {
     font-family: $secondaryFont;
     text-decoration: none;
 }
 
-hr{
+hr {
     color: $mainColor;
 }
 
-header img{
+header img {
     width: 100%;
 }
 
-img.pequena{
-    width: 75px;
-}
-img.mediana{
+
+img.mediana {
     width: 150px;
 }
 
-.w-90{
+.w-90 {
     width: 90%;
 }
 
-.bg-home{
+.bg-home {
     background-image: url(../backgrounds/background-home.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
